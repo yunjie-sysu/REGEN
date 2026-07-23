@@ -1,0 +1,9 @@
+jsonlines
+trl==0.12.2
+wandb
+deepspeed
+accelerate
+flash_attn
+vllm
+antlr4-python3-runtime==4.11
+alignment-handbook

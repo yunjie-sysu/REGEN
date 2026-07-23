@@ -1,0 +1,46 @@
+# ===== Model =====
+model_name_or_path:        # e.g. Qwen/Qwen2.5-0.5B-Instruct
+torch_dtype: bfloat16
+
+# ===== Data =====
+# Single-sided trajectory data, each containing only:
+#   prompt / response / nll_seq / advantage / origin_label
+data_path:                 # e.g. data/train/Trajectories
+prompt: ours
+preprocessing_num_workers: 12
+
+# ===== Training =====
+bf16: true
+do_eval: false
+evaluation_strategy: 'no'
+gradient_accumulation_steps: 16
+gradient_checkpointing: true
+hub_model_id: regen
+learning_rate: 5.0e-7
+log_level: info
+logging_steps: 1
+lr_scheduler_type: cosine
+max_length: 1024
+max_prompt_length: 512
+num_train_epochs: 2
+optim: adamw_torch
+output_dir: data/regen
+per_device_train_batch_size: 1
+per_device_eval_batch_size: 4
+push_to_hub: false
+report_to: "none"
+save_strategy: "no"
+seed: 42
+warmup_ratio: 0.1
+
+# ===== REGEN hyper-parameters =====
+# w = clip(π/μ, 0, regen_alpha) before tapering.
+regen_alpha: 1.0
+regen_clip_ratio_max: 10.0     # numerical safety on raw IS ratio before clipping
+regen_length_normalize: false  # set true to use per-token mean log-probs in loss & ratio
+regen_require_old_nll: true
+regen_use_dataset_advantage: true
+regen_default_advantage: 1.0
+
+# ρ(x, b) tapering upper bound for negative samples (positive samples always use ρ = 1):
+#   - origin_label == positive  → ρ = 1 (fixed)
