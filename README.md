@@ -16,7 +16,6 @@ Yunjie Chen, Xiaoxin Chen, Fang Wang<sup>*</sup>
 </div>
 
 ## News
-- [x] **`July 23, 2026.`** We release our training code.
 - [x] **`July 21, 2026.`** We release our paper on [arxiv](https://arxiv.org/abs/2607.19450).
 
 ## Abstract
@@ -80,11 +79,14 @@ bash bash_scrips/qwen2_5_1.5b_regen.sh
 ```
 
 ## Main Results
+We evaluate REGEN across three domains—**Math** (GSM8K, MATH), **Code** (HumanEval, MBPP), and **Alignment** (IFEval)—using Qwen2.5-1.5B-Instruct as the base model. REGEN is compared against Behavior Cloning (BC) and Multi-Teacher On-Policy Distillation (MOPD).
 
 <div align=center>
 <img width="800" alt="image" src="docs/main_result.png">
 </div>
 
+- REGEN performs on par with MOPD across all benchmarks while substantially outperforming BC, particularly on Code and Alignment.
+- REGEN achieves competitive accuracy with considerably higher training efficiency than MOPD, as it eliminates the need for online teacher inference during training.
 ## Acknowledgment
 
 Our work is built on the following codebases, and we are deeply grateful for their contributions.
