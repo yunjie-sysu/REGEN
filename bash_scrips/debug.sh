@@ -3,7 +3,7 @@ export WANDB_MODE=disabled
 export WANDB_RUN_NAME=qwen2_5-1.5b-regen-debug
 export CUDA_VISIBLE_DEVICES=0
 
-ACCELERATE_LOG_LEVEL=info $ACCELERATE launch \
+ACCELERATE_LOG_LEVEL=info accelerate launch \
     --mixed_precision bf16 \
     --num_processes 1 \
     regen_train.py configs/config_regen.yaml \
