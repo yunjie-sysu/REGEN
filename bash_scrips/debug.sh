@@ -3,11 +3,6 @@ export WANDB_MODE=disabled
 export WANDB_RUN_NAME=qwen2_5-1.5b-regen-debug
 export CUDA_VISIBLE_DEVICES=0
 
-# Activate step_dpo environment
-source /data/vjuicefs_ai_gpt_wl/public_data/11195618/envs/step_dpo/bin/activate
-
-ACCELERATE=/data/vjuicefs_ai_gpt_wl/public_data/11195618/envs/step_dpo/bin/accelerate
-
 ACCELERATE_LOG_LEVEL=info $ACCELERATE launch \
     --mixed_precision bf16 \
     --num_processes 1 \
