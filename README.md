@@ -82,7 +82,7 @@ bash bash_scrips/qwen2_5_1.5b_regen.sh
 We evaluate REGEN across three domains—**Math** (GSM8K, MATH), **Code** (HumanEval, MBPP), and **Alignment** (IFEval)—using Qwen2.5-1.5B-Instruct as the base model. REGEN is compared against Behavior Cloning (BC) and Multi-Teacher On-Policy Distillation (MOPD).
 
 <div align=center>
-<img width="800" alt="image" src="docs/main_result.png">
+<img width="800" alt="image" src="docs/main-result.png">
 </div>
 
 - REGEN performs on par with MOPD across all benchmarks while substantially outperforming BC, particularly on Code and Alignment.
