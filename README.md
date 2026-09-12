@@ -17,7 +17,7 @@ Yunjie Chen, Zihao Chen, Xiaoxin Chen, Fang Wang<sup>*</sup>
 
 ## News
 - [x] **`July 21, 2026.`** We release the first version of our paper on [arxiv](https://arxiv.org/abs/2607.19450).
-- [x] **`Sep 12, 2026.`** We relearse the second version of our paper, and the link is the same as above.
+- [x] **`Sep 12, 2026.`**  We relearse the second version of our paper, and the link is the same as above.
 
 ## Abstract
 
