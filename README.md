@@ -8,7 +8,7 @@
 
 <a href='https://arxiv.org/abs/2607.19450'><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a>
 
-Yunjie Chen, Xiaoxin Chen, Fang Wang<sup>*</sup>
+Yunjie Chen, Zihao Chen, Xiaoxin Chen, Fang Wang<sup>*</sup>
 
 <sup>*</sup>Corresponding to: fanwang.px@gmail.com
 
@@ -16,7 +16,8 @@ Yunjie Chen, Xiaoxin Chen, Fang Wang<sup>*</sup>
 </div>
 
 ## News
-- [x] **`July 21, 2026.`** We release our paper on [arxiv](https://arxiv.org/abs/2607.19450).
+- [x] **`July 21, 2026.`** We release the first version of our paper on [arxiv](https://arxiv.org/abs/2607.19450).
+- [x] **`Sep 12, 2026.`** We relearse the second version of our paper, and the link is the same as above.
 
 ## Abstract
 
@@ -79,7 +80,7 @@ bash bash_scrips/qwen2_5_1.5b_regen.sh
 ```
 
 ## Main Results
-We evaluate REGEN across three domains—**Math** (GSM8K, MATH), **Code** (HumanEval, MBPP), and **Alignment** (IFEval)—using Qwen2.5-1.5B-Instruct as the base model. REGEN is compared against Behavior Cloning (BC) and Multi-Teacher On-Policy Distillation (MOPD).
+We evaluate REGEN across three domains—**Math** (GSM8K, MATH), **Code** (HumanEval, MBPP), and **Alignment** (IFEval)—using Qwen2.5-1.5B-Instruct and Qwen2.5-0.5B-Instruct as the base model. REGEN is compared against Behavior Cloning (BC) and Multi-Teacher On-Policy Distillation (MOPD).
 
 <div align=center>
 <img width="800" alt="image" src="docs/main-result.png">
@@ -87,6 +88,7 @@ We evaluate REGEN across three domains—**Math** (GSM8K, MATH), **Code** (Human
 
 - REGEN performs on par with MOPD across all benchmarks while substantially outperforming BC, particularly on Code and Alignment.
 - REGEN achieves competitive accuracy with considerably higher training efficiency than MOPD, as it eliminates the need for online teacher inference during training.
+- For more experimental details, please refer to our paper.
 ## Acknowledgment
 
 Our work is built on the following codebases, and we are deeply grateful for their contributions.
