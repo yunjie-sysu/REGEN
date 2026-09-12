@@ -105,7 +105,7 @@ If you find our paper related and useful to your research, please cite our paper
 ```
 @article{chen2026regen,
     title={REGEN: Replay-recycling for Expert-to-Generalist distillation with Offline Reinforcement Learning},
-    author={Chen, Yunjie and Chen, Xiaoxin and Wang, Fang},
+    author={Chen, Yunjie and Chen, Zihao and Chen, Xiaoxin and Wang, Fang},
     year={2026},
     url={https://arxiv.org/abs/2607.19450}
 }
