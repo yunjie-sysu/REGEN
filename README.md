@@ -8,7 +8,7 @@
 
 <a href='https://arxiv.org/abs/2607.19450'><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a>
 
-Yunjie Chen, Zihao Chen, Xiaoxin Chen, Fang Wang<sup>*</sup>
+Yunjie Chen, Zihao Chen, Xiaoxin Chen, Fan Wang<sup>*</sup>
 
 <sup>*</sup>Corresponding to: fanwang.px@gmail.com
 
